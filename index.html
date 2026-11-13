@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Built in Dioshy's workshop. It rewrites the head and the order of the sections; edit inside a section's block, in styles/ and in scripts/ as you like. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>lipton ice tea</title>
+<meta name="description" content="advertisement site for lipton icea tea. fully animated and 3d modelled scenes. proffessional quality">
+<meta property="og:type" content="website">
+<meta property="og:title" content="lipton ice tea">
+<meta property="og:description" content="advertisement site for lipton icea tea. fully animated and 3d modelled scenes. proffessional quality">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#ffd60a">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bowlby+One:wght@400&amp;family=Bricolage+Grotesque:wght@400;600;800&amp;display=swap">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/kit.css">
+<link rel="stylesheet" href="styles/hero.css">
+<link rel="stylesheet" href="styles/the-heat.css">
+<link rel="stylesheet" href="styles/the-pour.css">
+<link rel="stylesheet" href="styles/together.css">
+<link rel="stylesheet" href="styles/loud.css">
+<link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+<!-- ws:hero -->
+<section id="hero" aria-labelledby="hero-title" data-ws="hero">
+  <header class="bar">
+    <a class="mark" href="#hero" data-slap style="--r:-2">Lipton <span>Ice&nbsp;Tea</span></a>
+    <nav aria-label="Sections">
+      <ul>
+        <li data-slap style="--r:3"><a href="#heat">Hot</a></li>
+        <li data-slap style="--r:-2.5"><a href="#pour">Cold</a></li>
+        <li data-slap style="--r:1.5"><a href="#together">Together</a></li>
+        <li data-slap style="--r:-3"><a href="#loud">Grab one</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wall">
+    <!-- an older, sun-faded poster the new ones get pasted over -->
+    <div class="p p-old" data-slap style="--r:4" aria-hidden="true">
+      <span>Fresh brewed</span><span>Fresh brewed</span><span>Fresh brewed</span>
+    </div>
+
+    <div class="p photo" data-slap style="--r:3" data-slot="photo" role="img"
+         aria-label="A tall glass of Lipton Ice Tea packed with ice and a lemon wheel, sweating on a sunny kiosk counter">
+      <!-- viewBox cropped to the glass so it sits centred and fills the poster -->
+      <svg viewBox="55 0 120 160" aria-hidden="true">
+        <rect class="g-straw" x="118" y="6" width="9" height="70" transform="rotate(14 122 40)"/>
+        <path class="g-glass" d="M70 40 L140 40 L132 150 L78 150 Z"/>
+        <rect class="g-ice" x="82" y="52" width="24" height="24" transform="rotate(-12 94 64)"/>
+        <rect class="g-ice" x="106" y="66" width="22" height="22" transform="rotate(18 117 77)"/>
+        <rect class="g-ice" x="88" y="92" width="22" height="22" transform="rotate(8 99 103)"/>
+        <circle class="g-lemon" cx="140" cy="44" r="20"/>
+        <path class="g-seg" d="M140 24 V64 M120 44 H160 M126 30 L154 58 M154 30 L126 58"/>
+      </svg>
+      <span class="wet" aria-hidden="true"></span>
+    </div>
+
+    <h1 id="hero-title" class="stack">
+      <span class="p p-hot" data-slap data-thump style="--r:-3">
+        <span class="ln">Hot</span><span class="ln">day?</span><span class="wet" aria-hidden="true"></span>
+      </span>
+      <span class="p p-cold" data-slap data-thump style="--r:2.5">
+        <span class="ln">Cold</span><span class="ln">Lipton.</span><span class="wet" aria-hidden="true"></span>
+      </span>
+    </h1>
+
+    <!-- the blue 'cold' sticker: the only thing on the wall that never sits still -->
+    <div class="sticker" data-slap style="--r:-8" aria-hidden="true">
+      <svg class="sticker-in" viewBox="0 0 100 100">
+        <polygon points="99,50 89.6,60.6 92.4,74.5 79,79 74.5,92.4 60.6,89.6 50,99 39.4,89.6 25.5,92.4 21,79 7.6,74.5 10.4,60.6 1,50 10.4,39.4 7.6,25.5 21,21 25.5,7.6 39.4,10.4 50,1 60.6,10.4 74.5,7.6 79,21 92.4,25.5 89.6,39.4"/>
+        <text class="s-big" x="50" y="56">COLD</text>
+        <text class="s-small" x="50" y="70">ICE · TEA</text>
+      </svg>
+    </div>
+
+    <div class="slips">
+      <div class="p flyer" data-slap style="--r:2">
+        <p class="cap">Brewed tea · lemon · a lot of ice</p>
+        <p>Pavement melting? Real brewed tea, poured over ice. Cold, bold and made for sharing, so grab two.</p>
+      </div>
+      <div class="stamp-wrap" data-slap style="--r:-4">
+        <a class="stamp" href="#heat">Take the sip
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v15M5 12l7 8 7-8"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /ws:hero -->
+
+<!-- ws:the-heat -->
+<section id="the-heat" class="k-section k-band--surface" aria-labelledby="heat-title" data-ws="the-heat">
+  <div class="k-wrap">
+
+    <!-- head: the title poster, with the shop thermometer slapped into its top-right corner -->
+    <div class="head" id="heat">
+      <div class="head-type">
+        <p class="k-eyebrow" data-slap style="--r:3">2:47 pm · not one cloud</p>
+        <h2 class="k-title" id="heat-title" data-slap style="--r:-2"><span>Too</span><span>hot.</span></h2>
+      </div>
+      <div class="p v-ink thermo" data-slap style="--r:4">
+        <p class="cap">Shade temp · corner of Market St</p>
+        <div class="thermo-read">
+          <span class="tube" aria-hidden="true"><span class="merc"></span></span>
+          <p class="deg" aria-hidden="true" data-deg data-fill>34°</p>
+          <p class="sr">It's 34 degrees in the shade.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- the mosaic: hot-day moments pasted over each other.
+         --w/--h = span at 6 columns, --W/--H = span at 12 columns -->
+    <div class="mosaic">
+      <div class="p v-muted photo" data-slap data-slot="photo" style="--w:6;--h:3;--W:5;--H:3;--r:-2"
+           role="img" aria-label="Heat haze rising off an empty road toward a bus stop, the sun hanging white over the tarmac">
+        <svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <circle class="f-bg" cx="150" cy="32" r="22"/>
+          <rect class="f-ground" y="70" width="200" height="50"/>
+          <path class="f-ink" d="M0 120 L200 120 L118 70 L82 70 Z"/>
+          <path class="s-bg" d="M100 74 V80 M100 88 V98 M100 107 V120"/>
+          <path class="s-haze" d="M56 64 q10 -6 20 0 t20 0 t20 0 t20 0 M70 56 q8 -5 16 0 t16 0 t16 0"/>
+          <rect class="f-ink" x="30" y="34" width="3" height="56"/>
+          <circle class="f-bg s-ink" cx="31.5" cy="30" r="10"/>
+          <rect class="f-ink" x="26" y="27" width="11" height="6"/>
+        </svg>
+        <p class="tag">Route 14 · nothing coming</p>
+      </div>
+
+      <div class="p v-sun" data-slap style="--w:3;--h:2;--W:3;--H:2;--r:3;--fs:19">
+        <p class="ln"><span>Shade:</span><span>taken.</span></p>
+      </div>
+      <div class="p v-ink" data-slap style="--w:6;--h:1;--W:4;--H:1;--r:-1.5;--fs:12">
+        <p class="ln"><span>Tarmac's</span><span>gone soft.</span></p>
+      </div>
+      <div class="p v-pale" data-slap style="--w:3;--h:1;--W:4;--H:1;--r:2.5;--fs:13">
+        <p class="ln"><span>Phone 4%.</span><span>Also hot.</span></p>
+      </div>
+
+      <!-- on 6 columns the lolly's tilted neighbour is "Sun on the back of your neck" (same two rows);
+           the dead cream beside it was that poster never being revealed -->
+      <div class="p v-sun photo" data-slap data-slot="photo" style="--w:3;--h:2;--W:3;--H:3;--r:-3.5"
+           role="img" aria-label="An ice lolly melting off its stick into a puddle on hot paving stones">
+        <svg viewBox="0 0 100 120" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <path class="s-muted" d="M0 96 L100 88 M0 112 L100 104 M38 92 L34 120 M78 89 L74 120"/>
+          <path class="f-pale s-ink" d="M18 104 q14 -12 34 -6 q22 -8 34 4 q-6 12 -34 10 q-28 4 -34 -8 Z"/>
+          <g transform="rotate(-14 50 50)">
+            <rect class="f-stick" x="46" y="70" width="8" height="26"/>
+            <path class="f-pale s-ink" d="M30 22 Q50 6 70 22 L70 70 Q62 78 54 70 L54 86 Q50 92 46 86 L46 72 Q38 78 30 70 Z"/>
+          </g>
+          <path class="f-pale s-ink" d="M40 82 q3 8 0 14 q-3 -6 0 -14 Z"/>
+        </svg>
+      </div>
+
+      <div class="p v-faded" data-slap style="--w:3;--h:1;--W:4;--H:2;--r:1.5;--fs:11">
+        <p class="ln"><span>Bus due</span><span>12 min ago.</span></p>
+        <p class="tag" data-fill>Stop 14 · still waiting</p>
+      </div>
+      <div class="p v-sun" data-slap style="--w:6;--h:2;--W:5;--H:2;--r:-2.5;--fs:12">
+        <p class="ln"><span>Mouth</span><span>like sand.</span></p>
+      </div>
+      <div class="p v-ink" data-slap style="--w:3;--h:2;--W:4;--H:2;--r:3.5;--fs:10">
+        <p class="ln"><span>Sun on</span><span>the back of</span><span>your neck.</span></p>
+      </div>
+
+      <div class="p v-pale photo" data-slap data-slot="photo" style="--w:6;--h:2;--W:4;--H:2;--r:-1"
+           role="img" aria-label="A queue spilling out of a corner shop under a striped awning, everyone squinting into the sun">
+        <svg viewBox="0 0 160 100" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect class="f-muted" x="8" y="10" width="144" height="90"/>
+          <path class="f-ink" d="M4 8 H156 V26 L148 34 L140 26 L132 34 L124 26 L116 34 L108 26 L100 34 L92 26 L84 34 L76 26 L68 34 L60 26 L52 34 L44 26 L36 34 L28 26 L20 34 L12 26 L4 34 Z"/>
+          <path class="f-bg" d="M20 8 H36 V30 L28 34 L20 30 Z M52 8 H68 V30 L60 34 L52 30 Z M84 8 H100 V30 L92 34 L84 30 Z M116 8 H132 V30 L124 34 L116 30 Z"/>
+          <rect class="f-ink" x="62" y="44" width="34" height="56"/>
+          <rect class="f-bg" x="68" y="52" width="22" height="8"/>
+          <g class="f-bg"><circle cx="110" cy="62" r="6"/><rect x="104" y="70" width="12" height="30"/>
+            <circle cx="128" cy="64" r="6"/><rect x="122" y="72" width="12" height="28"/>
+            <circle cx="146" cy="61" r="6"/><rect x="140" y="69" width="12" height="31"/></g>
+        </svg>
+        <p class="tag">Queue for the fridge</p>
+      </div>
+
+      <div class="p v-faded" data-slap style="--w:6;--h:1;--W:4;--H:1;--r:2;--fs:8.5">
+        <p class="ln"><span>The fan just</span><span>moves the heat</span><span>around.</span></p>
+      </div>
+      <div class="p v-sun" data-slap style="--w:3;--h:1;--W:3;--H:1;--r:-3;--fs:11">
+        <p class="ln"><span>Every bench</span><span>burns.</span></p>
+      </div>
+      <div class="p v-ink" data-slap style="--w:3;--h:1;--W:3;--H:1;--r:2.5;--fs:12">
+        <p class="ln"><span>Ice cream:</span><span>gone.</span></p>
+      </div>
+    </div>
+
+    <!-- the way out: one flyer and the section's single red stamp -->
+    <div class="out">
+      <p class="k-lede" data-slap style="--r:-1.5">Every afternoon, every summer, the same slow cook. Keep scrolling. Something cold is coming.</p>
+      <div class="stamp" data-slap style="--r:4">
+        <a class="k-btn" href="#pour">Make it stop
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v15M5 12l7 8 7-8"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /ws:the-heat -->
+
+<!-- ws:the-pour -->
+<section id="the-pour" class="k-band--ink" aria-labelledby="pour-title" data-ws="the-pour">
+  <!-- torn top edge: the ink wall rips up into the cream heat section above -->
+  <span class="seam" aria-hidden="true"></span>
+
+  <div class="stage" id="pour">
+    <!-- the heat: a sun poster that gets peeled off at the turning point -->
+    <div class="sun paper" aria-hidden="true">
+      <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+        <path class="rays" d="M262 18 L270 46 M318 40 L302 64 M342 98 L314 104 M206 40 L222 64 M330 160 L304 148 M184 96 L212 104"/>
+        <circle class="disc" cx="264" cy="112" r="52"/>
+        <g class="haze">
+          <path d="M-20 196 q20 -12 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/>
+          <path d="M-20 222 q20 -12 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/>
+          <path d="M-20 248 q20 -12 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- the cold: a blue sheet slapped up from the bottom of the wall -->
+    <div class="frost paper" aria-hidden="true"></div>
+
+    <!-- the glass: where a real site would put the 3D render -->
+    <div class="glass paper" data-slot="photo" role="img"
+         aria-label="Lipton Ice Tea pours into an empty glass, ice cubes drop in, a lemon wheel lands on the rim and the glass beads with cold">
+      <span class="chill"></span>
+      <svg viewBox="0 0 200 300" aria-hidden="true">
+        <defs><clipPath id="the-pour-inside"><path d="M42 80 L158 80 L147 283 L53 283 Z"/></clipPath></defs>
+        <rect class="counter" x="0" y="286" width="200" height="14"/>
+        <rect class="stream" x="96" y="-20" width="10" height="310"/>
+        <g clip-path="url(#the-pour-inside)">
+          <g class="tea">
+            <rect class="t-body" x="30" y="110" width="140" height="190"/>
+            <path class="t-top" d="M30 112 q15 -8 30 0 t30 0 t30 0 t30 0 t30 0 V122 H30 Z"/>
+          </g>
+        </g>
+        <g class="ice"><rect x="70" y="118" width="36" height="36" transform="rotate(-12 88 136)"/></g>
+        <g class="ice"><rect x="108" y="140" width="32" height="32" transform="rotate(18 124 156)"/></g>
+        <g class="ice"><rect x="78" y="170" width="30" height="30" transform="rotate(6 93 185)"/></g>
+        <path class="shine" d="M58 100 L66 270"/>
+        <path class="rim" d="M38 78 L162 78 L150 286 L50 286 Z"/>
+        <g class="lemon">
+          <circle cx="152" cy="82" r="24"/>
+          <path d="M152 62 V102 M132 82 H172 M138 68 L166 96 M166 68 L138 96"/>
+        </g>
+        <g class="beads">
+          <circle cx="56" cy="200" r="4"/><circle cx="62" cy="242" r="3"/><circle cx="64" cy="150" r="3"/>
+          <circle cx="142" cy="182" r="4"/><circle cx="138" cy="232" r="3.5"/><circle cx="146" cy="130" r="2.5"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- the one idle thing on the wall: the blue "cold" sticker slapped on the glass -->
+    <div class="sticker" aria-hidden="true"><span>Ice<br>cold</span></div>
+
+    <!-- the shop thermometer from the heat section, now falling -->
+    <div class="thermo paper">
+      <p class="cap">Shade temp · corner of Market St</p>
+      <div class="read" aria-hidden="true">
+        <span class="tube"><span class="merc"></span><span class="merc hot"></span></span>
+        <p class="deg"><span data-deg>4</span>°</p>
+      </div>
+      <p class="sr">The shade temperature drops from 34 to 4 degrees.</p>
+    </div>
+
+    <!-- the one line, landing at the turning point -->
+    <div class="say">
+      <p class="k-eyebrow" style="--r:-3">3:02 pm · first pour</p>
+      <h2 class="k-title" id="pour-title" style="--r:2"><span>Cold</span><span>hits.</span></h2>
+    </div>
+  </div>
+</section>
+<!-- /ws:the-pour -->
+
+<!-- ws:together -->
+<section id="together" class="k-section" aria-labelledby="together-title" data-ws="together">
+  <!-- the ink wall of the pour section, torn off where this one begins, with a scrap of its blue sheet still stuck on -->
+  <span class="seam" aria-hidden="true"></span>
+  <span class="scrap" aria-hidden="true"></span>
+
+  <div class="k-wrap board">
+    <header class="head">
+      <p class="k-eyebrow" data-slap>Together</p>
+      <h2 id="together-title" class="k-title" data-slap><span>Got</span><span>two?</span></h2>
+      <p class="k-lede" data-slap>Ice tea is a two-person drink. It just doesn't say so on the can.</p>
+    </header>
+
+    <div class="col col-a">
+      <figure class="m m--l m1">
+        <div class="shot" data-slap style="--r:-2.5" data-slot="photo" role="img"
+             aria-label="Two friends at a bus stop, one handing the other an ice-cold can of Lipton Ice Tea, sun low behind them">
+          <svg viewBox="0 0 300 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <circle class="f-bg" cx="206" cy="118" r="92"/>
+            <path class="f-mute" d="M310 214 L196 242 L200 284 L310 262 Z"/>
+            <g transform="rotate(-8 177 228)">
+              <rect class="f-sur" x="150" y="176" width="54" height="104"/>
+              <rect class="f-ink" x="150" y="208" width="54" height="34"/>
+              <rect class="f-bg" x="160" y="168" width="34" height="9"/>
+              <rect class="f-blue" x="190" y="252" width="5" height="12"/>
+            </g>
+            <path class="f-ink" d="M-10 304 L148 262 L156 306 L-10 356 Z"/>
+            <path class="s-ink" d="M118 156 l-22 -14 M128 136 l-12 -22 M144 128 l-2 -24"/>
+          </svg>
+          <span class="when" data-fill>Bus stop · 4:12pm</span>
+        </div>
+        <figcaption class="slip" data-slap style="--r:3">
+          <span class="cap">Passing a can</span>
+          “You look done in. Have the cold one, I'll get the next.” Nobody ever gets the next.
+        </figcaption>
+      </figure>
+
+      <figure class="m m--r m3">
+        <div class="shot" data-slap style="--r:2" data-slot="photo" role="img"
+             aria-label="Two neighbours on a front step at dusk, clinking cans of Lipton Ice Tea together">
+          <svg viewBox="0 0 300 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <circle class="f-bg" cx="70" cy="90" r="54"/>
+            <path class="f-sur" d="M0 420 V318 H112 V352 H220 V386 H300 V420 Z"/>
+            <rect class="f-blue" x="92" y="150" width="50" height="98" transform="rotate(16 117 199)"/>
+            <rect class="f-ink" x="92" y="176" width="50" height="30" transform="rotate(16 117 199)"/>
+            <rect class="f-sur" x="160" y="150" width="50" height="98" transform="rotate(-16 185 199)"/>
+            <rect class="f-ink" x="160" y="176" width="50" height="30" transform="rotate(-16 185 199)"/>
+            <path class="s-sur" d="M151 128 v-28 M124 134 l-16 -22 M178 134 l16 -22"/>
+          </svg>
+          <span class="when" data-fill>Front step · 20:30</span>
+        </div>
+        <figcaption class="slip" data-slap style="--r:-2">
+          <span class="cap">A toast on the step</span>
+          Half eight, still 29°. Cheers to nothing in particular, which is the best thing to cheers to.
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="col col-b">
+      <figure class="m m--r m2">
+        <div class="shot shot--ink" data-slap style="--r:3.5" data-slot="photo" role="img"
+             aria-label="One bottle of Lipton Ice Tea on a park bench with two straws in it, two people leaning in from either side">
+          <svg viewBox="0 0 300 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <circle class="f-mute" cx="150" cy="250" r="128"/>
+            <rect class="f-sur" x="138" y="36" width="9" height="150" transform="rotate(-24 142 170)"/>
+            <rect class="f-bg" x="153" y="36" width="9" height="150" transform="rotate(22 158 170)"/>
+            <path class="f-blue" d="M120 420 V240 Q120 202 135 188 V150 H165 V188 Q180 202 180 240 V420 Z"/>
+            <rect class="f-bg" x="120" y="282" width="60" height="52"/>
+            <rect class="f-ink" x="132" y="300" width="36" height="8"/>
+          </svg>
+          <span class="when" data-fill>Park bench · Saturday</span>
+        </div>
+        <figcaption class="slip" data-slap style="--r:-3">
+          <span class="cap">Splitting one</span>
+          One bottle, two straws, and a very serious argument about who got more of the lemon end.
+        </figcaption>
+      </figure>
+
+      <figure class="m m--l m4">
+        <div class="shot shot--paper" data-slap style="--r:-1.5" data-slot="photo" role="img"
+             aria-label="A hand reaching into a beach kiosk fridge for the last two cans of Lipton Ice Tea, peach and lemon">
+          <svg viewBox="0 0 300 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect class="f-ink" x="36" y="56" width="228" height="380"/>
+            <rect class="f-blue" x="56" y="78" width="188" height="360"/>
+            <rect class="f-sur" x="56" y="176" width="188" height="7"/>
+            <rect class="f-sur" x="56" y="282" width="188" height="7"/>
+            <rect class="f-bg" x="92" y="290" width="42" height="80"/>
+            <rect class="f-sur" x="146" y="290" width="42" height="80"/>
+            <rect class="f-ink" x="92" y="316" width="96" height="10"/>
+            <path class="f-mute" d="M310 236 L186 284 L192 318 L310 286 Z"/>
+          </svg>
+          <span class="when" data-fill>Beach kiosk · August</span>
+        </div>
+        <figcaption class="slip" data-slap style="--r:2.5">
+          <span class="cap">The last two</span>
+          Last two in the fridge. You take the peach. I'll pretend I wanted lemon anyway.
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- a direct child of the board, so on wide screens it can be pasted into the empty space under col-a -->
+    <div class="end" data-slap style="--r:-3">
+      <a class="k-btn" href="#loud">Get one for a mate</a>
+    </div>
+  </div>
+</section>
+<!-- /ws:together -->
+
+<!-- ws:loud -->
+<section id="loud" class="k-section k-band--accent" aria-labelledby="loud-title" data-ws="loud">
+  <!-- the red sheet is pasted over the bottom of "Together": its torn top edge overlaps the wall above -->
+  <span class="seam" aria-hidden="true"></span>
+  <!-- where an old poster was ripped away: a darker scar and a sun-bleached strip still stuck on -->
+  <span class="scrape" aria-hidden="true"></span>
+
+  <h2 id="loud-title" class="line">
+    <span class="w w1" style="--r:-3">Pass<span class="wet" aria-hidden="true"></span></span>
+    <span class="w w2" style="--r:4">it<span class="wet" aria-hidden="true"></span></span>
+    <span class="w w3" style="--r:-1.5">cold.<span class="wet" aria-hidden="true"></span></span>
+  </h2>
+</section>
+<!-- /ws:loud -->
+
+<!-- ws:footer -->
+<footer id="footer" class="k-section k-band--surface" aria-labelledby="footer-title" data-ws="footer">
+  <!-- the cream sheet is pasted over the bottom of the red "Loud" poster: its torn top edge sits on the red -->
+  <span class="seam" aria-hidden="true"></span>
+
+  <div class="k-wrap">
+    <div class="top">
+      <div class="sign" data-slap style="--r:-1">
+        <p class="k-eyebrow">Last poster on the wall</p>
+        <h2 id="footer-title" class="k-title k-title--blue"><span>Heat:</span><span>beat.</span></h2>
+      </div>
+
+      <div class="close" data-slap style="--r:2.5">
+        <p class="k-lede">The wall's up and the glass is empty. Good news: the fridge at the corner shop isn't. Brewed tea, lemon, a lot of ice. Go get one cold.</p>
+      </div>
+
+      <div class="grab" data-slap style="--r:-3">
+        <a class="k-btn" href="/where-to-buy" data-fill>Grab one cold
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M12 5l8 7-8 7"/></svg>
+        </a>
+      </div>
+
+      <!-- the blue 'cold' sticker again: still the only thing on the wall that won't sit still -->
+      <div class="sticker" data-slap style="--r:9" aria-hidden="true">
+        <svg class="sticker-in" viewBox="0 0 100 100">
+          <polygon points="99,50 89.6,60.6 92.4,74.5 79,79 74.5,92.4 60.6,89.6 50,99 39.4,89.6 25.5,92.4 21,79 7.6,74.5 10.4,60.6 1,50 10.4,39.4 7.6,25.5 21,21 25.5,7.6 39.4,10.4 50,1 60.6,10.4 74.5,7.6 79,21 92.4,25.5 89.6,39.4"/>
+          <text class="s-small" x="50" y="40">STILL</text>
+          <text class="s-big" x="50" y="62">COLD</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="cols">
+      <nav class="slip slip--ink" data-slap style="--r:-2" aria-label="Back up the wall">
+        <p class="cap">Back up the wall</p>
+        <ul>
+          <li><a href="#heat">Hot</a></li>
+          <li><a href="#pour">Cold</a></li>
+          <li><a href="#together">Together</a></li>
+          <li><a href="#loud">Pass it</a></li>
+          <li><a href="#hero">Top ↑</a></li>
+        </ul>
+      </nav>
+
+      <div class="slip slip--sun" data-slap style="--r:3">
+        <p class="cap">Find us on other walls</p>
+        <ul>
+          <li><a href="https://www.instagram.com/" data-fill>Instagram</a></li>
+          <li><a href="https://www.tiktok.com/" data-fill>TikTok</a></li>
+          <li><a href="https://www.youtube.com/" data-fill>YouTube</a></li>
+        </ul>
+      </div>
+
+      <div class="slip slip--ink slip--small" data-slap style="--r:-1.5">
+        <p class="cap">Small print</p>
+        <ul>
+          <li><a href="/privacy" data-fill>Privacy</a></li>
+          <li><a href="/cookies" data-fill>Cookies</a></li>
+          <li><a href="/terms" data-fill>Terms</a></li>
+          <li><a href="/contact" data-fill>Contact</a></li>
+        </ul>
+        <p class="legal" data-fill>© 2026 Pepsi Lipton International. LIPTON is a registered trade mark. Contains caffeine.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- the wordmark along the bottom edge: the last poster slaps over everything -->
+  <p class="word" aria-label="Lipton Ice Tea">
+    <span class="wp wp-1" data-slap style="--r:-2" aria-hidden="true">Lipton</span>
+    <span class="wp wp-2" data-slap data-last style="--r:2.5" aria-hidden="true">Ice&nbsp;Tea</span>
+  </p>
+</footer>
+<!-- /ws:footer -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script>window.gsap && gsap.registerPlugin(window.ScrollTrigger)</script>
+<script src="scripts/hero.js"></script>
+<script src="scripts/the-heat.js"></script>
+<script src="scripts/the-pour.js"></script>
+<script src="scripts/together.js"></script>
+<script src="scripts/loud.js"></script>
+<script src="scripts/footer.js"></script>
+</body>
+</html>

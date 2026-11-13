@@ -1,0 +1,94 @@
+/* Fly-Poster Wall: the site's tokens and base type. Every section builds on these. */
+:root {
+  --bg: #ffd60a;
+  --surface: #fff4c2;
+  --ink: #121212;
+  --muted: #4a3e00;
+  --accent: #e5322d;
+  --accent-2: #00a3e0;
+  --on-accent: #121212;
+  --line: color-mix(in srgb, var(--ink) 16%, transparent);
+  /* Fixed copies of the colours: a band that swaps the ones above still knows the originals. */
+  --c-bg: #ffd60a;
+  --c-surface: #fff4c2;
+  --c-ink: #121212;
+  --c-accent: #e5322d;
+  --c-on-accent: #121212;
+  --c-on-ink: #ffd60a;
+
+  --font-display: "Bowlby One", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* The Style panel's two dials: display type and room, 1 = as designed. */
+  --type-scale: 1;
+  --space-scale: 1;
+
+  --step--1: clamp(0.82rem, 0.79rem + 0.14vw, 0.9rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --step-1: calc(clamp(1.2rem, 1.1rem + 0.5vw, 1.5rem) * (1 + (var(--type-scale) - 1) * 0.5));
+  --step-2: calc(clamp(1.5rem, 1.3rem + 1vw, 2.1rem) * var(--type-scale));
+  --step-3: calc(clamp(1.9rem, 1.45rem + 2.2vw, 3.2rem) * var(--type-scale));
+  --step-4: calc(clamp(2.4rem, 1.5rem + 4.4vw, 5rem) * var(--type-scale));
+  --step-5: calc(clamp(3rem, 1.2rem + 8.6vw, 8.5rem) * var(--type-scale));
+
+  --space-1: calc(0.5rem * var(--space-scale));
+  --space-2: calc(1rem * var(--space-scale));
+  --space-3: calc(1.5rem * var(--space-scale));
+  --space-4: calc(2.5rem * var(--space-scale));
+  --space-5: calc(4rem * var(--space-scale));
+  --space-6: calc(clamp(4.5rem, 3rem + 7vw, 10rem) * var(--space-scale));
+  --gutter: clamp(1.25rem, 0.4rem + 3.6vw, 4rem);
+  --max: 84rem;
+  --measure: 62ch;
+  --radius: 0px;
+  --heading-weight: 400;
+  --heading-tracking: -0.01em;
+  --heading-case: uppercase;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 180ms;
+  --dur-2: 420ms;
+  --dur-3: 900ms;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: var(--heading-weight);
+  line-height: 1.04;
+  letter-spacing: var(--heading-tracking);
+  text-transform: var(--heading-case);
+  text-wrap: balance;
+}
+p, ul, ol, figure, blockquote { margin: 0; }
+p { text-wrap: pretty; }
+ul, ol { padding: 0; list-style: none; }
+img, svg, video, canvas { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+::selection { background: var(--accent); color: var(--bg); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

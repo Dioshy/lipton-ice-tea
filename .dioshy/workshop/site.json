@@ -1,0 +1,467 @@
+{
+ "v": 1,
+ "id": "smwfac546vlvq",
+ "projectId": "p1a1d6140aaa15",
+ "path": "/Users/dnico/Desktop/Projects/lipton ice tea",
+ "brief": {
+  "name": "lipton ice tea",
+  "what": "advertisement site for lipton icea tea. fully animated and 3d modelled scenes. proffessional quality",
+  "audience": "",
+  "tone": "Bold and loud, Warm and human, Refreshing",
+  "must": "proffessional level animation",
+  "refs": [],
+  "accent": "",
+  "fonts": ""
+ },
+ "model": "opus",
+ "stage": "build",
+ "directions": [
+  {
+   "id": "a",
+   "name": "Fly-Poster Wall",
+   "concept": "Ice tea doesn't live in a gallery; it lives at the corner shop, the beach kiosk and the bus stop, sold from walls shouting in hand-painted letters. The site is that wall: posters pasted over posters, loud and a bit crooked, with a human hand everywhere.",
+   "palette": {
+    "bg": "#ffd60a",
+    "surface": "#fff4c2",
+    "ink": "#121212",
+    "muted": "#4a3e00",
+    "accent": "#e5322d",
+    "accent2": "#00a3e0"
+   },
+   "fonts": {
+    "display": {
+     "family": "Bowlby One",
+     "weights": [
+      400
+     ],
+     "italic": false,
+     "fallback": "sans-serif"
+    },
+    "body": {
+     "family": "Bricolage Grotesque",
+     "weights": [
+      400,
+      600,
+      800
+     ],
+     "italic": false,
+     "fallback": "sans-serif"
+    }
+   },
+   "heading": {
+    "weight": 400,
+    "tracking": "-0.01em",
+    "upper": true
+   },
+   "radius": 0,
+   "layout": "Dense, overlapping paste-up. A 12-column grid exists only to be broken: each 'poster' is a block of colour with torn SVG edges, rotated −3° to 4°, overlapping its neighbours and bleeding off the viewport. Display type runs 14–22vw tall, stacked two or three words per line with almost no leading. Small hand-placed body copy sits in tilted 'flyer' slips with 800-weight captions. Nothing is centred a",
+   "motion": "As each section enters, its posters slap onto the wall one at a time: scale 1.12→1, rotation overshooting by 2° and settling, 180ms each with a hard back-out ease and a 90ms stagger, so the wall visibly builds as you scroll. Scrolling back peels them off in reverse. The accent-blue 'cold' sticker is the only element that wobbles idly, and it stops on hover. With reduced motion, posters are already",
+   "signature": "The page is a wall that gets pasted up as you scroll. By the bottom you have built a chaotic, sun-faded billboard of layered posters, and the last poster slaps over all of them.",
+   "avoid": [
+    "Any straight, perfectly aligned block. If it isn't tilted or overlapping, it doesn't belong here",
+    "Rounded corners, soft shadows or anything that looks like a UI card",
+    "Using the red for more than one stamp per viewport. It marks the single thing to do there",
+    "Thin or light type anywhere. Even the captions are heavy"
+   ],
+   "fontsHref": "https://fonts.googleapis.com/css2?family=Bowlby+One:wght@400&family=Bricolage+Grotesque:wght@400;600;800&display=swap",
+   "study": "ready",
+   "note": "impeccable · Persuade and Experience · imagegen-frontend-web · Build Animation From Scratch · stitch-design-taste · Lessons from practice · ui ux · Lessons from practice · Design"
+  },
+  {
+   "id": "b",
+   "name": "Five-Second Sip",
+   "concept": "The best part of an ice tea is the first five seconds of cold, usually shared with someone on a hot day. The whole page is those five seconds, slowed down and timecoded, so the scroll becomes one long, warm, human sip.",
+   "palette": {
+    "bg": "#fff8ec",
+    "surface": "#f2e2c4",
+    "ink": "#2b1508",
+    "muted": "#7a5a3f",
+    "accent": "#c8501a",
+    "accent2": "#9fd3c7"
+   },
+   "fonts": {
+    "display": {
+     "family": "Fraunces",
+     "weights": [
+      300,
+      600
+     ],
+     "italic": true,
+     "fallback": "serif"
+    },
+    "body": {
+     "family": "Instrument Sans",
+     "weights": [
+      400,
+      500
+     ],
+     "italic": true,
+     "fallback": "sans-serif"
+    }
+   },
+   "heading": {
+    "weight": 600,
+    "tracking": "-0.025em",
+    "upper": false
+   },
+   "radius": 4,
+   "layout": "Spacious, editorial and asymmetric. Text hangs from a narrow left column (max 34ch) against generous empty right space, like a film's subtitle track. A thin running timecode (00:00 → 00:05) is fixed to the right margin. Fraunces at 300 appears once, huge, for the hero line. Section heads are 600 weight at 28–40px with a single amber italic word that carries the feeling. One horizontal SVG 'liquid ",
+   "motion": "One scroll progress value drives everything: the timecode ticks from 00:00 to 00:05, and the full-width liquid line falls steadily down the page while drawn ice outlines drift along it with eased lag, so scrolling is drinking. Text lines rise 24px with an 80–120ms stagger tied to that same progress rather than separate triggers. Reduced motion freezes the line at each section's level and keeps sim",
+   "signature": "A single amber line runs across the whole screen and drops as you scroll, with a timecode counting the seconds of one sip, until the glass is empty at the footer and the clock reads 00:05.",
+   "avoid": [
+    "Shouting with size everywhere. Loudness comes from one enormous hero line and the colour, everything else breathes",
+    "More than one italic accent word per section",
+    "Drawing a literal bottle or packshot. The liquid line and ice outlines are the product",
+    "Dense grids or multiple columns of copy"
+   ],
+   "fontsHref": "https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300;1,600&family=Instrument+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap",
+   "study": "ready",
+   "note": "impeccable · Persuade and Experience · imagegen-frontend-web · Scroll-Driven Web Motion Craft · stitch-design-taste · Lessons from practice · ui ux · Lessons from practice · Design"
+  },
+  {
+   "id": "c",
+   "name": "Heat Index",
+   "concept": "Every ice tea is bought to beat the heat, so the true enemy in this ad is the temperature. The site reads like a live, cheerfully overconfident heat broadcast: giant readouts, hard data grid, and a number that drops as the tea takes over.",
+   "palette": {
+    "bg": "#0f1f22",
+    "surface": "#18302f",
+    "ink": "#eef6f2",
+    "muted": "#9db5b0",
+    "accent": "#ff5a1f",
+    "accent2": "#7fe3d0"
+   },
+   "fonts": {
+    "display": {
+     "family": "Big Shoulders Display",
+     "weights": [
+      700,
+      900
+     ],
+     "italic": false,
+     "fallback": "sans-serif"
+    },
+    "body": {
+     "family": "Familjen Grotesk",
+     "weights": [
+      400,
+      500,
+      600
+     ],
+     "italic": true,
+     "fallback": "sans-serif"
+    }
+   },
+   "heading": {
+    "weight": 900,
+    "tracking": "0.01em",
+    "upper": true
+   },
+   "radius": 0,
+   "layout": "Strict Swiss broadcast grid: 12 columns divided by 1px hairlines in muted, every block snapped to it. Density is high: readout tiles, ticker rules, labelled zones in 12px uppercase Familjen (two labels per viewport max). The grid is broken only by the giant temperature numeral, set at 40–60vh in Big Shoulders 900 and allowed to overrun the hairlines and the viewport edge. Photo slots are framed li",
+   "motion": "A fixed giant temperature numeral counts down as the page scrolls, and its colour slides from heat-orange to cold-mint once the 'pour' scene passes the midpoint. That is the only colour change on the page. Grid hairlines draw across with a sharp 400ms snap ease when each section enters, then the contents settle in with a softer ease. Reduced motion shows the final number per section with no count.",
+   "signature": "A huge temperature number dominates the screen and drops as you scroll, flipping from orange heat to mint cold at the exact moment the tea arrives.",
+   "avoid": [
+    "Orange anywhere except while it is still 'hot'. After the turn, only mint",
+    "Soft shapes, curves or hand-drawn marks. Everything is ruled and gridded",
+    "Sincere sci-fi telemetry. The tone stays sunny and human, a weather presenter, not a control room",
+    "Fading things up. Elements are ruled in by hairlines or counted in, never floated"
+   ],
+   "fontsHref": "https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap",
+   "study": "ready",
+   "note": "impeccable · Persuade and Experience · imagegen-frontend-web · Art Direction and Type System · stitch-design-taste · Lessons from practice · Web design · Lessons from practice · ui ux"
+  }
+ ],
+ "outline": [
+  {
+   "id": "hero",
+   "title": "Hero",
+   "purpose": "Stop the visitor in one beat: this is Lipton Ice Tea, it is loud, and it is cold. The first frame must prove the professional-level animation before a single scroll.",
+   "content": "Top bar inside: 'Lipton Ice Tea' wordmark plus links to Hot, Cold, Together and Grab one. A huge brand line that pairs heat with cold tea, in a voice that could only be Lipton Ice Tea's. A short supporting line: cold, bold and made for sharing. One clear action: scroll / take the sip.",
+   "shape": "full-bleed type stack bleeding off the edge, opening animation plays on load · light"
+  },
+  {
+   "id": "the-heat",
+   "title": "The heat",
+   "purpose": "Make the visitor feel the hot day the tea answers. This builds tension and gives the next section something to break.",
+   "content": "A rapid, dense run of hot-day moments told in short, punchy lines. The thirst, the sun, the waiting. No product claims, only the feeling the tea solves.",
+   "shape": "dense mosaic of short lines and art-directed photo slots · surface"
+  },
+  {
+   "id": "the-pour",
+   "title": "The pour",
+   "purpose": "The showpiece: a pinned scroll scene where heat turns into cold. The visitor understands 'refreshing' through motion alone. This is where the brief's professional-level animation lives.",
+   "content": "Minimal copy that lands at the turning point, a single line naming the cold arriving. Everything else is choreography driven by scroll.",
+   "shape": "pinned full-viewport scroll scene with one line of type · ink"
+  },
+  {
+   "id": "together",
+   "title": "Together",
+   "purpose": "Deliver the warm and human half of the brief: ice tea is something people share. The visitor should smile in recognition.",
+   "content": "Several small shared moments (passing a can, splitting one, a toast on a step) as short human captions beside art-directed photo slots for the owner's campaign people shots. Warm, specific and conversational, not slogans.",
+   "shape": "asymmetric editorial grid, captions offset against tall photo slots · light"
+  },
+  {
+   "id": "loud",
+   "title": "Loud",
+   "purpose": "A single brand beat at maximum volume, so the visitor leaves with the line in their head.",
+   "content": "One campaign line, enormous, that sums up bold + warm + refreshing. Nothing else in the section.",
+   "shape": "single oversized line spanning edge to edge, lots of air · accent"
+  },
+  {
+   "id": "footer",
+   "title": "Footer",
+   "purpose": "Close the loop and give the visitor something to do next: go get one cold.",
+   "content": "A short sign-off that echoes the hero and closes the story (the wall finished, the sip done, or the temperature beaten). A 'Grab one' call to action, a repeat of the section links, the Lipton Ice Tea wordmark, and space for the brand's legal and social links, supplied by the client.",
+   "shape": "compact multi-column close with the wordmark set large along the bottom edge · surface"
+  }
+ ],
+ "picked": "a",
+ "mix": "",
+ "sections": [
+  {
+   "id": "hero",
+   "title": "Hero",
+   "purpose": "Stop the visitor in one beat: this is Lipton Ice Tea, it is loud, and it is cold. The first frame must prove the professional-level animation before a single scroll.",
+   "content": "Top bar inside: 'Lipton Ice Tea' wordmark plus links to Hot, Cold, Together and Grab one. A huge brand line that pairs heat with cold tea, in a voice that could only be Lipton Ice Tea's. A short supporting line: cold, bold and made for sharing. One clear action: scroll / take the sip.",
+   "shape": "full-bleed type stack bleeding off the edge, opening animation plays on load · light",
+   "status": "done",
+   "skills": [
+    "impeccable",
+    "Persuade and Experience",
+    "imagegen-frontend-web",
+    "Build Animation From Scratch",
+    "stitch-design-taste",
+    "Lessons from practice",
+    "ui ux",
+    "Lessons from practice",
+    "Design"
+   ],
+   "libs": [
+    "gsap"
+   ],
+   "hasCss": true,
+   "hasJs": true,
+   "versions": 1,
+   "fills": 0,
+   "shots": {
+    "desktop": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794593523633.png",
+    "phone": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794593523551.png"
+   },
+   "review": {
+    "score": 6,
+    "good": "The paste-up reads as Fly-Poster Wall at first glance: huge Bowlby \"HOT DAY? / COLD LIPTON.\" on tilted torn posters, the blue starburst sticker, and a single red \"Take the sip\" stamp.",
+    "fixes": [
+     "On the 390px layout, the `.slips` flyer (`margin-top: calc(var(--space-2)  -1)`) covers the bottom of \"LIPTON.\" and cuts the baseline, and the lower 35% of the screen is empty yellow. Remove the negative margin on narrow widths so the headline clears the flyer. Then give `.wall` `justify-content: space-between`, or enlarge and re-space the headline and `.p-old`, so the poster stack fills the viewport.",
+     "The `#hero .p::after` grain with `mix-blend-mode: multiply` turns the `#fff4c2` surface posters (HOT DAY?, flyer) into a muddy grey-tan, and the blue poster dulls too. Drop the grain alpha to about .25, or use `soft-light`, so the cream stays warm and the blue stays refreshing.",
+     "The `.photo` stand-in at 1280px is a dead black slab with a dim yellow disc, and the glass is a small cropped drawing on its right edge. Give it a bright ground (blue or cream), enlarge the SVG glass to fill the poster and centre it, and drop the black. Also shift `.p-old` so \"FRESH BR\" isn't chopped at the viewport edge and tucked under the photo.",
+     "The console error \"plugin:notification|is_permission_granted not allowed by ACL\" is an unhandled rejection from a notification permission check. Remove that call from the hero's JS, or wrap it in try/catch with `.catch(() => {})` and skip it when the Tauri plugin is unavailable."
+    ],
+    "fixed": true
+   },
+   "note": "The page still logs: unhandled promise rejection: Command plugin:notification|is_permission_granted not allowed by ACL"
+  },
+  {
+   "id": "the-heat",
+   "title": "The heat",
+   "purpose": "Make the visitor feel the hot day the tea answers. This builds tension and gives the next section something to break.",
+   "content": "A rapid, dense run of hot-day moments told in short, punchy lines. The thirst, the sun, the waiting. No product claims, only the feeling the tea solves.",
+   "shape": "dense mosaic of short lines and art-directed photo slots · surface",
+   "status": "done",
+   "skills": [
+    "imagegen-frontend-web",
+    "industrial-brutalist",
+    "Build Animation From Scratch",
+    "stitch-design-taste",
+    "Lessons from practice · ui ux",
+    "Lessons from practice · Design"
+   ],
+   "libs": [
+    "gsap",
+    "ScrollTrigger"
+   ],
+   "hasCss": true,
+   "hasJs": true,
+   "versions": 1,
+   "note": "The page still logs: unhandled promise rejection: Command plugin:notification|is_permission_granted not allowed by ACL",
+   "review": {
+    "score": 4,
+    "good": "The direction is right: Bowlby caps, torn-edge posters, tilted slips and specific lines like \"Phone 4%. Also hot.\" and \"Bus due 12 min ago.\" give the heat real personality, and the drawn bus-stop, lolly and awning stand-ins look deliberate.",
+    "fixes": [
+     "On the 1280 view the `.thermo` poster sits on top of the \"Tarmac's / gone soft.\" poster, so the first line reads \"TA…\" and is hidden behind the 33° and the white tube. On the phone the thermometer likewise covers the \"HOT.\" in the title. Move the thermometer up and right into the title poster's corner, or add `margin-top` and `z-index` to the mosaic so it clears the first row, and make sure no `.ln` text sits under another poster.",
+     "Half the section never shows. The phone capture stops after the lolly, with about 55% of the height empty, and neither width shows \"Mouth like sand\" (phone), the \"Out\" lede, the \"Sun on the back of your neck\" slips on phone, or the red \"Make it stop\" stamp. In the JS, make the slap trigger observe each `[data-slap]` individually (or fall back to a visible state after a timeout). Default `.p` and `.out` to visible without JS and under reduced motion, then hide them only once the observer is armed.",
+     "On the 390 view \"TOO HOT.\" is about 100px wide, roughly a quarter of the screen, and sits like a label, which breaks the 14–22vw display-type rule. Size `.k-title` with `font-size: clamp(5rem, 24vw, 14rem)` and let the poster bleed off the left edge. Also stop the lolly poster stopping at half width with dead cream beside it; give it a full-width span or a tilted neighbour.",
+     "Fix the console error `Command plugin:notification|is_permission_granted not allowed by ACL`. Find the call that asks for notification permission and wrap it in `try/catch` (or `.catch(() => {})`). Skip it when the plugin isn't available, or add the permission to the Tauri capability file."
+    ],
+    "fixed": true
+   },
+   "fills": 2,
+   "shots": {
+    "desktop": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794594085401.png",
+    "phone": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794594085298.png"
+   }
+  },
+  {
+   "id": "the-pour",
+   "title": "The pour",
+   "purpose": "The showpiece: a pinned scroll scene where heat turns into cold. The visitor understands 'refreshing' through motion alone. This is where the brief's professional-level animation lives.",
+   "content": "Minimal copy that lands at the turning point, a single line naming the cold arriving. Everything else is choreography driven by scroll.",
+   "shape": "pinned full-viewport scroll scene with one line of type · ink",
+   "status": "done",
+   "skills": [
+    "imagegen-frontend-web",
+    "industrial-brutalist",
+    "Build Animation From Scratch",
+    "stitch-design-taste",
+    "Lessons from practice · ui ux",
+    "Lessons from practice · Design"
+   ],
+   "libs": [
+    "gsap",
+    "ScrollTrigger"
+   ],
+   "hasCss": true,
+   "hasJs": true,
+   "versions": 1,
+   "note": "The page still logs: unhandled promise rejection: Command plugin:notification|is_permission_granted not allowed by ACL",
+   "review": {
+    "score": 4,
+    "good": "The yellow sun poster with its heavy black rays, three wavy heat lines and torn edge is properly loud and hand-made, and the heat-to-cold idea (falling thermometer, blue frost sheet rising) suits the \"refreshing\" brief.",
+    "fixes": [
+     "`.glass` on both widths: the stand-in reads as a big empty cream slab with a rim outline, like a door frame. At 1280 it bleeds off the right edge so the trapezoid is cut off, and at 390 it shrinks to a small shape at the bottom right in a field of black. On desktop, change `left:49%` to about 44% and cap the width so the whole glass shows. On phone, make it about 78% wide, move `bottom` up to about 24%, and tilt it 3° into the sun. Seed the start state with a visible stream or a half-filled `.tea` so it never reads as empty.",
+     "`.say` (\"Cold hits.\" and the eyebrow): the only line of copy is missing from both screenshots, so the section has no headline and no type presence. The brief asks for display type at 14–22vw, and everything visible is tiny caption text. Make sure `.k-title` and `.k-eyebrow` are visible at the end state, and in the pinned timeline have them slap in with the 1.12→1 scale and 2° rotation overshoot. Set the title to about 18vw, stacked \"Cold / hits.\" with tight leading, overlapping the frost and glass.",
+     "`.thermo` and `.sun` on phone: the thermometer slip lands on top of a sun ray, so the ray shows through behind the caption. The slip is also tiny on desktop, with a roughly 12px caption and a 34° readout that barely registers, though it carries the heat-to-cold story. Move it clear of the rays (for example `top:30%; left` aligned to the gutter) and raise `.deg` to `--step-5` or larger. The reading should be a big hand-painted number, and the red stamp stays only on the hot mercury.",
+     "the 390px stage has huge empty black bands above the frost and below the sun. Replace `100svh` / `min-height:36rem` with sizing that the posters fill, for example `min-height:44rem`. Scale `.sun` and `.frost` so the heat sheet takes about 55% of the height, and add the idle-wobble blue \"cold\" sticker (`--accent-2`, rotated, wobble stops on hover) that the direction calls for but this section doesn't have."
+    ],
+    "fixed": true
+   },
+   "fills": 0,
+   "shots": {
+    "desktop": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794594421184.png",
+    "phone": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794594420974.png"
+   }
+  },
+  {
+   "id": "together",
+   "title": "Together",
+   "purpose": "Deliver the warm and human half of the brief: ice tea is something people share. The visitor should smile in recognition.",
+   "content": "Several small shared moments (passing a can, splitting one, a toast on a step) as short human captions beside art-directed photo slots for the owner's campaign people shots. Warm, specific and conversational, not slogans.",
+   "shape": "asymmetric editorial grid, captions offset against tall photo slots · light",
+   "status": "done",
+   "skills": [
+    "imagegen-frontend-web",
+    "antislop-ui",
+    "Build Animation From Scratch",
+    "stitch-design-taste",
+    "Lessons from practice · ui ux",
+    "Lessons from practice · Design"
+   ],
+   "libs": [
+    "gsap",
+    "ScrollTrigger"
+   ],
+   "hasCss": true,
+   "hasJs": true,
+   "versions": 1,
+   "note": "The page still logs: unhandled promise rejection: Command plugin:notification|is_permission_granted not allowed by ACL",
+   "review": {
+    "score": 6,
+    "good": "The copy is warm and specific (\"Nobody ever gets the next\", \"the lemon end\"), the stand-ins are deliberate flat-colour scenes with torn edges, tilted slips and ink \"when\" tags, and the one red CTA on mobile is correctly the only red.",
+    "fixes": [
+     "On mobile, make every poster tilted and overlapping instead of a tidy stack. Poster widths (`.shot`) are all 86% and the gaps are clean, so it reads as a template feed. Vary the widths (70–100%), pull each poster up about 2rem under the previous slip, and let one poster bleed off the viewport edge. Raise `.k-title` to at least 16vw so \"GOT TWO?\" shouts the way the 14–22vw brief asks.",
+     "On desktop, the \"Get one for a mate\" `.end` button is missing from the capture and about 700px of bare yellow sits under the toast slip. In `.col-a`, add a negative top margin or offset on `.m3` so it tucks up against the park-bench poster, and give `.col-b` and `.end` an explicit place so the red stamp shows above the fold of the section's end. If the button was hidden by its entrance state, make it visible by default.",
+     "The `.when` tags are clipped by their own tear (`--k-tear-b`), so \"BEACH KIOSK · AUGUST\" and \"PARK BENCH · SATURDAY\" lose their last letters on desktop. Add right padding of about 1.2em to `.when`, or move the tear to the left edge only.",
+     "The logged \"plugin:notification|is_permission_granted not allowed by ACL\" rejection is unhandled. Add `.catch(() => {})` to the notification permission call, or skip it unless the `notification:default` permission is granted in the Tauri capability."
+    ],
+    "fixed": true
+   },
+   "fills": 4,
+   "shots": {
+    "desktop": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794594682795.png",
+    "phone": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794594682584.png"
+   }
+  },
+  {
+   "id": "loud",
+   "title": "Loud",
+   "purpose": "A single brand beat at maximum volume, so the visitor leaves with the line in their head.",
+   "content": "One campaign line, enormous, that sums up bold + warm + refreshing. Nothing else in the section.",
+   "shape": "single oversized line spanning edge to edge, lots of air · accent",
+   "status": "done",
+   "skills": [
+    "Art Direction and Editorial Composition",
+    "imagegen-frontend-web",
+    "Build Animation From Scratch",
+    "stitch-design-taste",
+    "Lessons from practice · ui ux",
+    "Lessons from practice · Design"
+   ],
+   "libs": [
+    "gsap",
+    "ScrollTrigger"
+   ],
+   "hasCss": true,
+   "hasJs": true,
+   "versions": 1,
+   "note": "The page still logs: unhandled promise rejection: Command plugin:notification|is_permission_granted not allowed by ACL",
+   "review": {
+    "score": 4,
+    "good": "The three torn, tilted slips (cream \"PASS\", ink \"IT\", blue \"COLD.\") in Bowlby One are the right fly-poster move, and \"Pass it cold.\" is a short line that sticks.",
+    "fixes": [
+     "`#loud` renders near-black in both screenshots, with only a sliver of red at the top seam. The red sheet that is the point of this section is missing. Hard-set `background-color: #e5322d` on `#loud` instead of relying on `var(--accent)`, which resolves dark under `.k-band--accent`. Check that the `::after` grain (multiply at .55) isn't crushing the colour. Then the red is the one stamp for the viewport, and `.scrape` and `.seam` can read against it.",
+     "`.w2` (\"IT\") is `--l-ink` on the same ink, so it has no edge and only the cream letters float. Once the background is red this resolves. Also give `.w2` a slightly different tilt or offset so it overlaps `.w1` and `.w3` visibly, rather than sitting in a black gap between them.",
+     "At 1280px the line is one row at about 9–12vw in the vertical middle, with huge dead space above and below. That is timid for the \"maximum volume\" beat. On wide screens stack it as two or three lines (e.g. \"PASS IT\" over \"COLD.\") at 18–22vw with near-zero leading. Let `.w1` bleed off the left and `.w3` off the right, and drop `min-height` to about 80svh so the posters fill the sheet.",
+     "On the phone the words sit at the bottom of a roughly 800px void, and `.scrape` shows as a tiny dark zigzag fragment that looks like a glitch. Cut the mobile `min-height` to about 60svh. Make `.scrape` larger, with its opacity raised to about .14 and placed behind the words, or remove it. Raise `--fs` on mobile so \"COLD.\" isn't clipped hard at the right edge by its own tear."
+    ],
+    "fixed": true
+   },
+   "fills": 0,
+   "shots": {
+    "desktop": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794594909940.png",
+    "phone": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794594909499.png"
+   }
+  },
+  {
+   "id": "footer",
+   "title": "Footer",
+   "purpose": "Close the loop and give the visitor something to do next: go get one cold.",
+   "content": "A short sign-off that echoes the hero and closes the story (the wall finished, the sip done, or the temperature beaten). A 'Grab one' call to action, a repeat of the section links, the Lipton Ice Tea wordmark, and space for the brand's legal and social links, supplied by the client.",
+   "shape": "compact multi-column close with the wordmark set large along the bottom edge · surface",
+   "status": "done",
+   "skills": [
+    "Art Direction and Editorial Composition",
+    "industrial-brutalist",
+    "Build Animation From Scratch",
+    "stitch-design-taste",
+    "Lessons from practice · ui ux",
+    "Lessons from practice · Design"
+   ],
+   "libs": [
+    "gsap",
+    "ScrollTrigger"
+   ],
+   "hasCss": true,
+   "hasJs": true,
+   "versions": 1,
+   "note": "The page still logs: unhandled promise rejection: Command plugin:notification|is_permission_granted not allowed by ACL",
+   "review": {
+    "score": 6,
+    "good": "The paste-up language is convincing: torn-edge blue, ink and sun slips, tilted flyers, a single red \"Grab one cold\" stamp, and a LIPTON / ICE TEA wordmark that bleeds off the bottom edge. The \"Heat: beat.\" sign-off echoes the hero.",
+    "fixes": [
+     "On the phone, `.close` (the lede slip) covers the lower half of \"BEAT.\" in `.sign`, so the closing headline is clipped and unreadable. Remove the negative top margin on `#footer .close` below 56rem, or give `.sign` bottom padding of about 0.6em, so both lines of the title show in full before the slip overlaps it.",
+     "On desktop, the grid leaves a large empty cream hole to the right of the \"Back up the wall\" slip, and the three slips step down like a staircase, so the footer reads sparse instead of dense. Make `.cols` a 12-column grid, with the nav slip at columns 1–4, the sun slip at 5–8 pulled up by -4rem to overlap the nav, and the small-print slip at 8–12 overlapping the sun slip. Then enlarge the sticker or add a second overlapping tilted slip to fill the right side.",
+     "The wordmark is cropped too far. On the phone \"ICE TEA\" shows only its top sliver and the brand name is unreadable, and on desktop its lower half is lost. Change `#footer .wp-2` `margin-bottom` from `-.2em` to about `-.06em`, and give `.word` bottom padding so at least 85% of the cap height shows. Raise the phone wordmark sizes too, since `wp-1` at 21vw and `wp-2` at 15vw are small next to the 14–22vw direction.",
+     "The \"HEAT: BEAT.\" title is timid for a closing poster. It fills about 45% of the width at 1280px and about 40% at 390px, while the direction asks for display type at 14–22vw. Raise the `.k-title` font-size in `#footer` to about `clamp(4.5rem, 17vw, 17rem)` with `line-height: .84`. On desktop, let the blue poster bleed off the left edge and overlap the sticker so it is clearly the focal point above the wordmark."
+    ],
+    "fixed": true
+   },
+   "fills": 9,
+   "shots": {
+    "desktop": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794595181878.png",
+    "phone": "/var/folders/4k/d3vxg9gx7js_z7wvd9t_vg7r0000gn/T/dioshy-shots/127.0.0.1-49256-1794595181795.png"
+   }
+  }
+ ],
+ "createdMs": 1794593000166,
+ "updatedMs": 1794595181883,
+ "kit": true
+}

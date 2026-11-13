@@ -1,0 +1,118 @@
+#the-pour {
+  /* fixed brand paper colours: the scene needs real sun and real cold whatever the band swaps */
+  --sun: var(--c-bg, #ffd60a);
+  --paper: var(--c-surface, #fff4c2);
+  --dark: var(--c-ink, #121212);
+  --olive: #4a3e00;
+  --cold: var(--accent-2);
+  --tea: color-mix(in oklab, var(--sun) 52%, var(--olive));
+  --tea-top: color-mix(in oklab, var(--sun) 78%, var(--olive));
+  position: relative;
+  background: var(--bg);
+  overflow-x: clip;
+}
+#the-pour .seam {
+  position: absolute; z-index: 6; inset-inline: 0; top: -1.6rem; height: 1.7rem;
+  background: var(--bg); clip-path: var(--k-tear-edge);
+}
+/* phone: a fixed poster-height wall the sheets fill, instead of a tall empty viewport */
+#the-pour .stage { position: relative; min-height: 44rem; overflow: hidden; }
+#the-pour .paper { position: absolute; }
+#the-pour .paper::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(200deg, rgb(255 255 255 / .2), transparent 45%), var(--k-grain);
+  mix-blend-mode: multiply;
+}
+#the-pour .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* ---- heat: about 55% of the stage ---- */
+#the-pour .sun {
+  z-index: 1; top: -2%; left: -12%; width: 104%; height: 55%;
+  background: var(--sun); clip-path: var(--k-tear-a); rotate: -3deg;
+}
+#the-pour .sun svg { display: block; width: 100%; height: 100%; }
+#the-pour .disc { fill: var(--paper); stroke: var(--dark); stroke-width: 6; }
+#the-pour .rays,
+#the-pour .haze path { fill: none; stroke: var(--dark); stroke-width: 7; stroke-linecap: square; }
+
+/* ---- cold: meets the heat sheet, no black band between ---- */
+#the-pour .frost {
+  z-index: 2; left: -6%; width: 112%; bottom: -6%; height: 54%;
+  background: var(--cold); clip-path: var(--k-tear-edge); rotate: -2deg;
+}
+
+/* ---- glass: tilted into the sun ---- */
+#the-pour .glass {
+  z-index: 3; left: 16%; bottom: 24%; width: 78%; aspect-ratio: 2 / 3;
+  background: var(--paper); clip-path: var(--k-tear-b); rotate: -3deg;
+}
+#the-pour .chill { position: absolute; inset: 0; background: color-mix(in oklab, var(--cold) 38%, var(--paper)); }
+#the-pour .glass svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+#the-pour .counter { fill: var(--dark); }
+#the-pour .stream, #the-pour .t-body { fill: var(--tea); }
+#the-pour .t-top { fill: var(--tea-top); }
+#the-pour .ice rect { fill: color-mix(in oklab, var(--cold) 22%, var(--paper)); fill-opacity: .88; stroke: var(--dark); stroke-width: 3.5; }
+#the-pour .shine { fill: none; stroke: var(--paper); stroke-width: 6; opacity: .75; }
+#the-pour .rim { fill: none; stroke: var(--dark); stroke-width: 5; stroke-linejoin: miter; }
+#the-pour .lemon circle { fill: var(--sun); stroke: var(--dark); stroke-width: 4; }
+#the-pour .lemon path { fill: none; stroke: var(--dark); stroke-width: 2.5; }
+#the-pour .beads circle { fill: var(--paper); stroke: var(--dark); stroke-width: 1.5; }
+
+/* ---- the blue "cold" sticker ---- */
+#the-pour .sticker {
+  position: absolute; z-index: 4; right: 3%; bottom: 31%; width: 7rem; aspect-ratio: 1;
+  rotate: 12deg;
+}
+#the-pour .sticker span {
+  display: grid; place-content: center; width: 100%; height: 100%;
+  background: var(--cold); color: var(--dark);
+  font-family: var(--font-display); font-size: var(--step-1); line-height: .85;
+  letter-spacing: -.01em; text-transform: uppercase; text-align: center;
+  clip-path: polygon(50% 0%, 61% 13%, 77% 6%, 80% 22%, 96% 25%, 89% 40%, 100% 52%, 88% 62%, 94% 78%, 78% 80%, 74% 96%, 59% 88%, 48% 100%, 38% 87%, 22% 95%, 20% 78%, 4% 74%, 12% 60%, 0% 48%, 12% 38%, 5% 22%, 22% 20%, 25% 4%, 40% 12%);
+}
+
+/* ---- thermometer slip: clear of the rays, aligned to the gutter ---- */
+#the-pour .thermo {
+  z-index: 4; top: 30%; left: var(--gutter); width: min(15rem, 56%);
+  padding: var(--space-1) var(--space-2) var(--space-2);
+  background: var(--paper); color: var(--dark); clip-path: var(--k-tear-b); rotate: 4deg;
+}
+#the-pour .cap {
+  font-family: var(--font-body); font-weight: 800; text-transform: uppercase;
+  font-size: max(1rem, var(--step-0)); line-height: 1.1; letter-spacing: .04em; color: var(--olive);
+}
+#the-pour .read { display: grid; gap: .3rem; margin-top: .5rem; }
+#the-pour .tube { position: relative; height: 1.1rem; border: .22rem solid var(--dark); overflow: hidden; }
+#the-pour .merc { position: absolute; inset: 0; background: var(--cold); transform-origin: 0 50%; transform: scaleX(.15); }
+/* the red stamp lives only on the hot mercury */
+#the-pour .merc.hot { background: var(--accent); opacity: 0; }
+#the-pour .deg {
+  font-family: var(--font-display); font-size: max(4.5rem, var(--step-5)); line-height: .82;
+  font-variant-numeric: tabular-nums; color: var(--dark); rotate: -4deg; transform-origin: 0 100%;
+}
+
+/* ---- the line: huge stacked display type over the frost and glass ---- */
+#the-pour .say { position: absolute; z-index: 5; left: var(--gutter); bottom: 5%; }
+#the-pour .say .k-eyebrow { margin-inline-start: 1.2rem; }
+#the-pour .say .k-title { font-size: clamp(3.5rem, 18vw, 20rem); line-height: .8; }
+
+@media (prefers-reduced-motion: no-preference) {
+  #the-pour .sticker span { animation: the-pour-wobble calc(var(--dur-3) * 2.6) var(--ease-in-out) infinite alternate; }
+  #the-pour .sticker:hover span { animation-play-state: paused; }
+}
+@keyframes the-pour-wobble {
+  from { transform: rotate(-5deg) scale(1); }
+  to   { transform: rotate(5deg) scale(1.04); }
+}
+
+@media (min-width: 60rem) {
+  #the-pour .stage { height: 100svh; min-height: 40rem; }
+  #the-pour .sun { top: -6%; left: -6%; width: 64%; height: 72%; rotate: -2.5deg; }
+  #the-pour .frost { height: 58%; }
+  /* capped so the whole trapezoid stays on the wall */
+  #the-pour .glass { left: 44%; top: 7%; bottom: auto; width: min(32%, 27rem, 56svh); rotate: 3deg; }
+  #the-pour .sticker { right: auto; left: 70%; bottom: auto; top: 50%; width: 9rem; }
+  #the-pour .thermo { top: 8%; left: auto; right: 4%; width: 20rem; rotate: -3.5deg; }
+  #the-pour .deg { font-size: calc(var(--step-5) * 1.35); }
+  #the-pour .say { bottom: 7%; }
+}
